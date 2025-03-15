@@ -6,8 +6,8 @@ import { ExtratoComponent } from './extrato/extrato.component';
 const routes: Routes = [
   { path: 'agendamento', component: AgendamentoComponent },
   { path: 'extrato', component: ExtratoComponent },
-  { path: '', redirectTo: '/agendamento', pathMatch: 'full' }, // Redireciona para a página de agendamento por padrão
-  { path: '**', redirectTo: '/agendamento' } // Redireciona para agendamento caso a rota não exista
+  { path: '', redirectTo: '/agendamento', pathMatch: 'full' },
+  { path: '**', redirectTo: '/agendamento' }
 ];
 
 @NgModule({
