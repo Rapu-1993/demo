@@ -1,21 +1,48 @@
-<h2>Agendamento de Transferência</h2>
-<form (ngSubmit)="agendarTransferencia()">
-  <div>
-    <label for="contaOrigem">Conta de Origem:</label>
-    <input id="contaOrigem" type="text" [(ngModel)]="transferencia.contaOrigem" name="contaOrigem" required />
+<div class="container">
+    <h2>Agendamento de Transferência</h2>
+    <form (ngSubmit)="agendarTransferencia()">
+      <div class="form-group">
+        <label for="contaOrigem">Conta de Origem:</label>
+        <input
+          id="contaOrigem"
+          type="text"
+          [(ngModel)]="transferencia.contaOrigem"
+          name="contaOrigem"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="contaDestino">Conta de Destino:</label>
+        <input
+          id="contaDestino"
+          type="text"
+          [(ngModel)]="transferencia.contaDestino"
+          name="contaDestino"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="valor">Valor:</label>
+        <input
+          id="valor"
+          type="number"
+          [(ngModel)]="transferencia.valor"
+          name="valor"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="dataTransferencia">Data de Transferência:</label>
+        <input
+          id="dataTransferencia"
+          type="date"
+          [(ngModel)]="transferencia.dataTransferencia"
+          name="dataTransferencia"
+          required
+        />
+      </div>
+      <button type="submit">Agendar</button>
+    </form>
+    <p *ngIf="mensagem" class="alert">{{ mensagem }}</p>
   </div>
-  <div>
-    <label for="contaDestino">Conta de Destino:</label>
-    <input id="contaDestino" type="text" [(ngModel)]="transferencia.contaDestino" name="contaDestino" required />
-  </div>
-  <div>
-    <label for="valor">Valor:</label>
-    <input id="valor" type="number" [(ngModel)]="transferencia.valor" name="valor" required />
-  </div>
-  <div>
-    <label for="dataTransferencia">Data de Transferência:</label>
-    <input id="dataTransferencia" type="date" [(ngModel)]="transferencia.dataTransferencia" name="dataTransferencia" required />
-  </div>
-  <button type="submit">Agendar</button>
-</form>
-<p *ngIf="mensagem">{{ mensagem }}</p>
+  
