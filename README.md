@@ -24,6 +24,36 @@ TypeScript: Versão 4.5
 HTML/CSS: Para construção das interfaces do usuário.
 Postman: Para testes da API.
 
+Instruções para Subida do Projeto
+
+Configuração do Back-end
+
+Navegue até o diretório do projeto Spring Boot.
+
+Execute o comando:
+
+mvn spring-boot:run
+
+A API estará disponível em http://localhost:8080.
+
+Configuração do Front-end
+
+Navegue até o diretório do projeto Angular.
+
+Execute o comando:
+
+ng serve
+
+A aplicação Angular estará disponível em http://localhost:4200.
+
+Testes
+
+Utilize o Postman para testar as rotas da API:
+
+GET /transferencias: Para listar transferências.
+
+POST /transferencias: Para agendar uma nova transferência (com o corpo JSON apropriado).
+
 Considerações Finais
 A aplicação foi projetada para ser simples e funcional, com foco na experiência do usuário e na facilidade de uso. As decisões arquiteturais foram tomadas para garantir a escalabilidade e a manutenção do código a longo prazo.
 
