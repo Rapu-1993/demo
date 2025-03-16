@@ -26,3 +26,9 @@ Postman: Para testes da API.
 
 Considerações Finais
 A aplicação foi projetada para ser simples e funcional, com foco na experiência do usuário e na facilidade de uso. As decisões arquiteturais foram tomadas para garantir a escalabilidade e a manutenção do código a longo prazo.
+
+![WhatsApp Image 2025-03-15 at 21 38 27](https://github.com/user-attachments/assets/35c12bde-6642-4760-ae4c-853cacae0f8d)
+
+
+![WhatsApp Image 2025-03-15 at 21 38 27 (1)](https://github.com/user-attachments/assets/6a43c3cb-12c0-492e-9be1-cc0134f5a6c7)
+
